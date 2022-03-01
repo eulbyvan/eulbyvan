@@ -40,7 +40,9 @@ const Navbar = () => {
 			style={{ transition: 'top 0.6s', top: visible ? '0' : '-60px' }}
 		>
 			<div className="app__navbar-logo">
-				<img src={images.logo} alt="logo" />
+				<a href="https://eulbyvan.com">
+					<img src={images.logo} alt="logo" />
+				</a>
 			</div>
 			<ul className="app__navbar-links">
 				{['home', 'about', 'work', 'skills', 'contact'].map((item) => (
