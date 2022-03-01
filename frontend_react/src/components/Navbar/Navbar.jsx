@@ -37,10 +37,10 @@ const Navbar = () => {
 	return (
 		<nav
 			className="app__navbar"
-			style={{ transition: 'top 0.6s', top: visible ? '0' : '-60px' }}
+			style={{ transition: 'top 0.6s', top: visible ? '0' : '-90px' }}
 		>
 			<div className="app__navbar-logo">
-				<a href="https://eulbyvan.com">
+				<a href=".">
 					<img src={images.logo} alt="logo" />
 				</a>
 			</div>
