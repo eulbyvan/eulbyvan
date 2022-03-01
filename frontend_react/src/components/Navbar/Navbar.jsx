@@ -5,22 +5,28 @@ import { motion } from 'framer-motion';
 import { images } from '../../constants';
 import './Navbar.scss';
 
+import { debounce } from '../../utilities/helper.js';
+
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
 	const [prevScrollPos, setPrevScrollPos] = useState(0);
 	const [visible, setVisible] = useState(true);
 
-	const handleScroll = useCallback(() => {
-		const currentScrollPos = window.pageYOffset;
+	const handleScroll = debounce(
+		useCallback(() => {
+			const currentScrollPos = window.pageYOffset;
 
-		setVisible(
-			(prevScrollPos > currentScrollPos &&
-				prevScrollPos - currentScrollPos > 70) ||
-				currentScrollPos < 10
-		);
+			setVisible(
+				(prevScrollPos > currentScrollPos &&
+					prevScrollPos - currentScrollPos > 70) ||
+					currentScrollPos < 10
+			);
 
-		setPrevScrollPos(currentScrollPos);
-	}, [prevScrollPos]);
+			setPrevScrollPos(currentScrollPos);
+		}, [prevScrollPos]),
+		// timer set to 100 milliseconds:
+		100
+	);
 
 	useEffect(() => {
 		window.addEventListener('scroll', handleScroll);
