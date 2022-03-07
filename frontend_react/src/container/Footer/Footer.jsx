@@ -64,7 +64,7 @@ const Footer = () => {
 						rel="noreferrer"
 						className="p-text"
 					>
-						+62 812-8061-8031
+						+62 812-3456-789
 					</a>
 				</div>
 			</div>
