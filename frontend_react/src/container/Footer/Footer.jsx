@@ -59,7 +59,7 @@ const Footer = () => {
 				<div className="app__footer-card">
 					<img src={images.mobile} alt="phone" />
 					<a
-						href="https://wa.me/+6281280618031"
+						href="https://wa.me/+62812345678"
 						target="_blank"
 						rel="noreferrer"
 						className="p-text"
