@@ -59,7 +59,7 @@ const Header = () => (
 			whileInView={scaleVariants.whileInView}
 			className="app__header-circles"
 		>
-			{[images.sqlserver, images.csharp, images.git].map(
+			{[images.csharp, images.sqlserver, images.git].map(
 				(circle, index) => (
 					<div
 						className="circle-cmp app__flex"
