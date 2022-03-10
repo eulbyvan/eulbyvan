@@ -18,6 +18,7 @@ import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
 import csharp from '../assets/csharp.png';
+import csharp02 from '../assets/csharp02.png';
 import sqlserver from '../assets/sqlserver.png';
 
 import about01 from '../assets/about01.png';
@@ -58,6 +59,7 @@ export default {
   typescript,
   vue,
   csharp,
+  csharp02,
   sqlserver,
   about01,
   about02,
