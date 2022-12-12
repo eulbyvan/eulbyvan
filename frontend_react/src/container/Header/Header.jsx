@@ -59,7 +59,7 @@ const Header = () => (
 			whileInView={scaleVariants.whileInView}
 			className="app__header-circles"
 		>
-			{[images.springboot, images.react, images.java].map((circle, index) => (
+			{[images.springboot, images.react, images.git].map((circle, index) => (
 				<div className="circle-cmp app__flex" key={`circle-${index}`}>
 					<img src={circle} alt="profile_bg" />
 				</div>
