@@ -39,6 +39,7 @@ import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import springboot from '../assets/springboot.png';
 import java from '../assets/java.png';
+import javawithtext from '../assets/javawithtext.png';
 
 export default {
   email,
@@ -78,5 +79,6 @@ export default {
   skype,
   spotify,
   springboot,
-  java
+  java,
+  javawithtext
 };
